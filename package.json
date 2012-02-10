@@ -3,9 +3,9 @@
   "description": "a collection of macros used in the rzr framework",
   "version": "0.0.1",
   "homepage": "http://github.com/rzr-js/yerba",
-  "keywords": ["framework", "ddd", "fractal", "microframework", "application", "secure"],
+  "keywords": ["framework", "ddd", "fractal", "microframework", "application", "secure", "macros"],
   "author": "Fractal (http://wearefractal.com)",
-  "main": "./domain/macros.coffee",
+  "main": "./main.js",
   "bugs": {
     "web": "http://github.com/rzr-js/yerba/issues"
   },
@@ -14,13 +14,13 @@
     "url": "http://github.com/rzr-js/yerba.git"
   },
   "dependencies": {
-    "mongoose": "1.8.x",
-    "validator": "0.2.6",
     "coffee-script": "*",
+    "burrito": "*",
+    "macrojs": "*",
+    "modulate": "*",
   },
-  "contributors": [{
-    "name": "Contra",
-    "github": "https://github.com/Contra"
+  "devDependencies": {
+    "should": "*",
   },
   {
     "name": "atrerus",

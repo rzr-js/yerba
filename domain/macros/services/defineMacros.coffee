@@ -9,7 +9,7 @@ macros.define 'debug', (node) ->
   return out
 
 macros.define 'load', (pathSpec, node) ->
-  {domainRoot} = require './services/projectRoot'
+  {domainRoot} = require '../../project/services/projectRoot'
 
   {load} = (require 'modulate')(domainRoot: domainRoot)
   load(pathSpec)
