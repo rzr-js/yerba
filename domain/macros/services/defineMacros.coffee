@@ -14,9 +14,19 @@ macros.define 'load', (pathSpec, node) ->
   {load} = (require 'modulate')(domainRoot: domainRoot)
   load(pathSpec)
 
-#macros.add 'series'
+macros.define 'chain', (fns..., node) ->
+  require "sugar"
 
-#macros.add 'chain'
+  chain = (fns) ->
+    # from(1) === rest()
+    if fns.from(1).length > 0
 
-#macros.add 'parallel'
+      # fill performs currying, returning a modified function with the first arg pre-supplied
+      "#{fns.first()}.fill(#{chain fns.from(1)})"
+    else
+      fns.first()
+
+  chain(fns).toString() + ';'
+
+#macros.define 'run'
 

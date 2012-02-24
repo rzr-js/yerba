@@ -18,6 +18,7 @@
     "burrito": "*",
     "macrojs": "*",
     "modulate": "*",
+    "sugar": "*",
   },
   "devDependencies": {
     "should": "*",

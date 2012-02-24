@@ -1,0 +1,24 @@
+//result = chain
+//  foo: 1
+//  bar: 2
+//  fnA
+//  fnB
+//  fnC
+//
+//module.exports = 6
+
+foo = function() {return 3};
+chain = function() {return 6};
+
+fnA = function() {};
+fnB = function() {};
+fnC = function() {};
+
+result = chain(
+  {foo: 1,
+   bar: 2},
+  fnA,
+  fnB,
+  fnC);
+
+module.exports = result;
