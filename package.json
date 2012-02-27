@@ -4,8 +4,7 @@
   "version": "0.0.1",
   "homepage": "http://github.com/rzr-js/yerba",
   "keywords": ["framework", "ddd", "fractal", "microframework", "application", "secure", "macros"],
-  "author": "Fractal (http://wearefractal.com)",
-  "main": "./main.js",
+  "author": "Brandon Mason (http://www.torchlightsoftware.com)",
   "bugs": {
     "web": "http://github.com/rzr-js/yerba/issues"
   },
